@@ -17,9 +17,19 @@
     padding-bottom: 4rem;
 }
 
+/* navbar color */
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
 /* display background dark color on navbar scroll */
+.navbarScroll {
+    background-color: transparent;
+    transition: background-color 0.5s ease;
+}
+
 .navbarScroll.navbarDark {
-    background-color: #5b5b5b;
+    background-color: #07052C;
 }
 
 /* hero background image */
@@ -29,6 +39,7 @@
     background: url("images/image1.jpg");
     background-size: cover;
     position: relative;
+    background-color: #07052C;
 }
 /* text css above hero image*/
 .hero_title {
