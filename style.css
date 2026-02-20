@@ -96,9 +96,24 @@
 }
 
 /* portfolio */
+#portfolio .card {
+    height: 360px;
+}
+#portfolio img {
+    height: 140px;
+    object-fit: scale-down;
+}
+#portfolio .card-body {
+    display: flex;
+    flex-direction: column;
+}
 #portfolio p {
     text-align: center;
 }
+#portfolio .text-center {
+    margin-top: auto;
+}
+
 
 /* contact */
 .contactColumn {
