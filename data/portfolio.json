@@ -1,15 +1,8 @@
 [
     {
-        "image": "image1_booki.webp",
-        "title": "Booki",
-        "alt": "logo Booki",
-        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "link": "#"
-    },
-    {
-        "image": "image2.webp",
-        "title": "Mon Vieux grimoire",
-        "alt" : "logo mon vieux grimoire",
+        "image": "Sophie_Bluel_Logo.webp",
+        "title": "Sophie Bluel",
+        "alt": "logo Sophie Bluel",
         "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
         "link": "#"
     },
@@ -17,6 +10,13 @@
         "image": "image3.webp",
         "title": "Kasa",
         "alt": "logo Kasa",
+        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "link": "#"
+    },
+    {
+        "image": "eco_bliss_bath.webp",
+        "title": "Eco Bliss Bath",
+        "alt" : "logo Eco Bliss Bath",
         "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
         "link": "#"
     }
