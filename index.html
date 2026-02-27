@@ -16,130 +16,144 @@
 </head>
 
 <body>
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbarScroll">
-        <div class="container">
-            <a class="navbar-brand" data-cy="navlink-name" href="#">Portfolio de Mélodie</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" data-cy="navlink-home" href="#home">Accueil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-cy="navlink-about" href="#about">A propos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-cy="navlink-skills" href="#skills">Compétences</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-cy="navlink-portfolio" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-cy="navlink-contact" href="#contact">Contactez-moi</a>
-                    </li>
-                </ul>
-
-            </div>
-        </div>
-    </nav>
-
-    <!-- main banner -->
-    <section class="bgimage" id="home">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
-                    <h1 class="hero_title" data-cy="hero-h1">Salut, moi c'est Mélodie</h1>
-                    <h2 class="hero_desc" data-cy="hero-h2">Je suis testeuse / développeuse web junior</h2>
+    <header>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbarScroll">
+            <div class="container">
+                <a class="navbar-brand" data-cy="navlink-name" href="#">Portfolio de Mélodie</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" data-cy="navlink-home" href="#home">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-cy="navlink-about" href="#about">A propos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-cy="navlink-skills" href="#skills">Compétences</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-cy="navlink-portfolio" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-cy="navlink-contact" href="#contact">Contactez-moi</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </section>
+        </nav>
+    </header>
 
-    <!-- about section-->
-    <section id="about">
-        <div class="container mt-4 pt-4">
-            <h2 class="text-center">A propos</h2>
-            <div class="row mt-4">
-                <div class="col-lg-4">
-                    <img src="images/person-388.webp" class="imageAboutPage" alt="">
-                </div>
-
-                <div class="col-lg-8">
-                    <p> 
-                        Actuellement en alternance, je conçois, exécute les tests, analyse les résultats et les communiquent, via différents outils de tests comme ALM et Redmine. Ma maîtrise de SQL et de DBeaver me permet d'interagir efficacement avec les bases de données pour, notamment, récupérer des jeux de données. Ayant une appétence pour les tests techniques, je conçoit/réalise aussi bien des tests fonctionnels et bout-en-bout, que d'API et d'intégration.<br>
-                        Par le biais de mon centre de formation, j'ai également pu me former au développement Web (React, HTML, CSS, javascript) et au tests automatisés (Cypress).<br>
-                        Rigueur et méthodologie sont au cœur de mon approche, garantissant des tests fiables et contribuant significativement à la qualité des projets.
-                    </p>
-                    <div class="row mt-3">
-                        <div class="col-md-6">
-                            <ul>
-                                <li>Nom : Mélodie M.</li>
-                                <li>Age : 35</li>
-                                <li>Localisation : Nantes</li>
-
-                            </ul>
-                        </div>
-                        <div class="col-md-6" style="display: none">
-                            <ul>
-                                <li>Nom: Prénom nom</li>
-                                <li>Age: 42</li>
-                                <li>xxx: xxx xxx</li>
-                            </ul>
-                        </div>
+    <main>
+        <!-- main banner -->
+        <section class="bgimage" id="home">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+                        <h1 class="hero_title" data-cy="hero-h1">Salut, moi c'est Mélodie</h1>
+                        <h2 class="hero_desc" data-cy="hero-h2">Je suis testeuse / développeuse web junior</h2>
                     </div>
-                    <div class="row mt-3">
+                </div>
+            </div>
+        </section>
+
+        <!-- about section-->
+        <section id="about">
+            <div class="container mt-4 pt-4">
+                <h2 class="text-center">A propos</h2>
+                <div class="row mt-4">
+                    <div class="col-lg-4">
+                        <img src="images/person-388.webp" class="imageAboutPage" alt="">
+                    </div>
+
+                    <div class="col-lg-8">
                         <p>
-                            Après 8 ans d'expérience dans la recherche scientifique, j'ai décidé de me reconvertir dans le monde informatique, notamment dans le test logiciel et développement Web.<br>
-                            Avec le parcours Testeur logiciel d'OpenClassrooms, je prépare la certification professionnelle « Développeur Informatique » (Titre RNCP de niveau 5).
+                            Actuellement en alternance, je conçois, exécute les tests, analyse les résultats et les
+                            communiquent, via différents outils de tests comme ALM et Redmine. Ma maîtrise de SQL et de
+                            DBeaver me permet d'interagir efficacement avec les bases de données pour, notamment,
+                            récupérer des jeux de données. Ayant une appétence pour les tests techniques, je
+                            conçoit/réalise aussi bien des tests fonctionnels et bout-en-bout, que d'API et
+                            d'intégration.<br>
+                            Par le biais de mon centre de formation, j'ai également pu me former au développement Web
+                            (React, HTML, CSS, javascript) et au tests automatisés (Cypress).<br>
+                            Rigueur et méthodologie sont au cœur de mon approche, garantissant des tests fiables et
+                            contribuant significativement à la qualité des projets.
                         </p>
+                        <div class="row mt-3">
+                            <div class="col-md-6">
+                                <ul>
+                                    <li>Nom : Mélodie M.</li>
+                                    <li>Age : 35</li>
+                                    <li>Localisation : Nantes</li>
+
+                                </ul>
+                            </div>
+                            <div class="col-md-6" style="display: none">
+                                <ul>
+                                    <li>Nom: Prénom nom</li>
+                                    <li>Age: 42</li>
+                                    <li>xxx: xxx xxx</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <p>
+                                Après 8 ans d'expérience dans la recherche scientifique, j'ai décidé de me reconvertir
+                                dans le monde informatique, notamment dans le test logiciel et développement Web.<br>
+                                Avec le parcours Testeur logiciel d'OpenClassrooms, je prépare la certification
+                                professionnelle « Développeur Informatique » (Titre RNCP de niveau 5).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- skills section-->
+        <section id="skills">
+            <div class="container">
+                <h2 class="text-center">Mes compétences</h2>
+            </div>
+        </section>
+
+        <!-- portfolio section-->
+        <section id="portfolio">
+            <div class="container mt-3">
+                <h2 class="text-center">Mes projets</h2>
+        </section>
+    </main>
+
+    <footer>
+        <!-- contact section-->
+        <section id="contact">
+            <div class="container mt-3 contactContent">
+                <h2 class="text-center">Contactez-moi</h2>
+                <div class="row">
+                    <div class="col-lg-4 mt-4 contactColumn">
+                        <i class="fa-solid fa-phone fa-4x"></i>
+                        <h3>Téléphone</h3>
+                        <p>Communiqué après 1er contact</p>
+                    </div>
+                    <div class="col-lg-4 mt-4 contactColumn">
+                        <i class="fa-regular fa-envelope fa-4x"></i>
+                        <h3>Adresse email</h3>
+                        <p>melodie.m******@gmail.com</p>
+                    </div>
+                    <div class="col-lg-4 mt-4 contactColumn">
+                        <i class="fa-brands fa-linkedin-in fa-4x"></i>
+                        <h3>
+                            <a href="https://www.linkedin.com/in/m%C3%A9lodie-migault-b13044157/">LinkedIn</a>
+                        </h3>
+                        <p>Mélodie Migault</p>
                     </div>
                 </div>
             </div>
-    </section>
-
-    <!-- skills section-->
-    <section id="skills">
-        <div class="container">
-            <h2 class="text-center">Mes compétences</h2>
-        </div>
-    </section>
-
-    <!-- portfolio section-->
-    <section id="portfolio">
-        <div class="container mt-3">
-            <h2 class="text-center">Mes projets</h2>
-    </section>
-
-    <!-- contact section-->
-    <section id="contact">
-        <div class="container mt-3 contactContent">
-            <h2 class="text-center">Contactez-moi</h2>
-            <div class="row">
-                <div class="col-lg-4 mt-4 contactColumn">
-                    <i class="fa-solid fa-phone fa-4x"></i>
-                    <h3>Téléphone</h3>
-                    <p>Communiqué après 1er contact</p>
-                </div>
-                <div class="col-lg-4 mt-4 contactColumn">
-                    <i class="fa-regular fa-envelope fa-4x"></i>
-                    <h3>Adresse email</h3>
-                    <p>melodie.m******@gmail.com</p>
-                </div>
-                <div class="col-lg-4 mt-4 contactColumn">
-                    <i class="fa-brands fa-linkedin-in fa-4x"></i>
-                    <h3>
-                        <a href="https://www.linkedin.com/in/m%C3%A9lodie-migault-b13044157/">LinkedIn</a>
-                    </h3>
-                    <p>Mélodie Migault</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
+    </footer>
 
     <!-- load javascript after loading all html content -->
     <script src="script/script.js"></script>
