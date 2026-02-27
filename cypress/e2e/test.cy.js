@@ -44,6 +44,7 @@ describe('website connexion', () => {
 
 })
 
+//Redirection via les liens de la barre de navigation
 describe('link redirection', () => {
 
     beforeEach(() => {
@@ -93,3 +94,82 @@ describe('link redirection', () => {
     })
 
 })
+
+
+//Vérification section skills
+describe('skills section', () => {
+
+    beforeEach(() => {
+        cy.visit('/')
+        cy.getBySel('navlink-skills').click()
+    })
+
+    it('should have Mes compétences', () => {
+        cy.get('#skills h2').should('have.text', "Mes compétences")
+    })
+
+    it('should display 6 cards', () => {
+        cy.get('#skills .card-body').should('have.length', 6)
+    })
+
+    it('should display correct information in each card', () => {
+        cy.request({
+            method: 'GET',
+            url: '/data/skills.json'
+        }).then((response) => {
+            const skills = response.body
+            cy.get('#skills .card-body').each(($card, index) => {
+                const skill = skills[index]
+            
+                cy.wrap($card).find('.card-title').should('have.text', skill.title)
+                cy.wrap($card).find('.card-text').should('have.text', skill.text)
+                })
+        })
+    })
+
+})
+
+//Vérification section portfolio
+describe('portfolio section', () => {
+
+    beforeEach(() => {
+        cy.visit('/')
+        cy.getBySel('navlink-portfolio').click()
+    })
+
+    it('should have Mes projets', () => {
+        cy.get('#portfolio h2').should('have.text', "Mes projets")
+    })
+
+    it('should display 6 cards', () => {
+        cy.get('#portfolio .card-body').should('have.length', 3)
+    })
+
+    it('should display correct information in each card', () => {
+        cy.request({
+            method: 'GET',
+            url: '/data/portfolio.json'
+        }).then((response) => {
+            const portfolio = response.body
+            cy.get('#portfolio .card-body').each(($card, index) => {
+                const portfo = portfolio[index]
+            
+                cy.wrap($card).find('.card-title').should('have.text', portfo.title)
+                cy.wrap($card).find('.card-text').should('have.text', portfo.text)
+                })
+        })
+    })
+})
+
+// //Vérification section contact
+// describe('contact section', () => {
+
+//     beforeEach(() => {
+//         cy.visit('/')
+//         cy.getBySel('navlink-contact').click()
+//     })
+
+//     it('should have Mes projets', () => {
+//         cy.get('#portfolio h2').should('have.text', "Mes projets")
+//     })
+// })
