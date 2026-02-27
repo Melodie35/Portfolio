@@ -133,5 +133,16 @@
 }
 
 
-
 /* footer */
+footer a {
+    display: block;
+    text-align: center;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    text-decoration: none;
+    color: #fff;
+    background-color: #07052C;    
+}
+footer a:hover {
+    color: #fff;
+}
