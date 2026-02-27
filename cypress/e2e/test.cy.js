@@ -15,14 +15,24 @@ describe('website connexion', () => {
         cy.getBySel('hero-h2').should('be.visible')
     })
 
-    // it('loads skills.json', () => {
-    //      cy.request({
-    //         method: 'GET',
-    //         url: apiRoutes.orders
-    //     }).then((response) => {
-    //         expect(response.status).to.eq(200)
-    //         expect(response.body.orderLines).to.be.an('array')
-    //     })
-    // })    
+    it('loads skills.json', () => {
+         cy.request({
+            method: 'GET',
+            url: '/data/skills.json'
+        }).then((response) => {
+            expect(response.status).to.eq(200)
+        })
+    })   
+    
+    it('loads portfolio.json', () => {
+         cy.request({
+            method: 'GET',
+            url: '/data/portfolio.json'
+        }).then((response) => {
+            expect(response.status).to.eq(200)
+        })
+    })
+
+    
 
 })
