@@ -60,6 +60,9 @@ jobs:
     needs: Test
 
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
       - name: Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
