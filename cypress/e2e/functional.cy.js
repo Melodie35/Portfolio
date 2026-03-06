@@ -156,20 +156,38 @@ describe('portfolio section', () => {
             
                 cy.wrap($card).find('.card-title').should('have.text', portfo.title)
                 cy.wrap($card).find('.card-text').should('have.text', portfo.text)
+                cy.wrap($card).find('a').should('have.attr','href', portfo.link)
                 })
         })
     })
+
 })
 
-// //Vérification section contact
-// describe('contact section', () => {
+//Vérification section contact
+describe('contact section', () => {
 
-//     beforeEach(() => {
-//         cy.visit('/')
-//         cy.getBySel('navlink-contact').click()
-//     })
+    beforeEach(() => {
+        cy.visit('/')
+        cy.getBySel('navlink-contact').click()
+    })
 
-//     it('should have Mes projets', () => {
-//         cy.get('#portfolio h2').should('have.text', "Mes projets")
-//     })
-// })
+    it('should have Contactez-moi', () => {
+        cy.get('#contact h2').should('have.text', "Contactez-moi")
+    })
+
+    it('should display 3 columns', () => {
+        cy.get('#contact .contactColumn').should('have.length', 3)                
+    })
+
+    it('should display correct titles', () => {
+        const titles = ["Téléphone", "Adresse email", "LinkedIn"]
+
+        cy.get('#contact .contactColumn').each(($column, index) => {
+            cy.wrap($column).find('h3').should('have.text', titles[index])
+        })
+    })
+
+    it('should display linkedin url', () => {
+        cy.get('.contactColumn').eq(2).find('a').should('have.attr', 'href', 'https://www.linkedin.com/in/m%C3%A9lodie-migault-b13044157/')
+    })
+})
