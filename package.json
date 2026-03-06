@@ -1,5 +1,27 @@
 {
+  "name": "p12-testeur-logiciel-portfolio",
+  "version": "1.0.0",
+  "description": "<div align=\"center\">",
+  "main": "cypress.config.js",
+  "dependencies": {},
   "devDependencies": {
     "cypress": "^14.5.4"
-  }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress": "cypress run",
+    "dev": "serve . -p 5500"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Melodie35/Portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Melodie35/Portfolio/issues"
+  },
+  "homepage": "https://github.com/Melodie35/Portfolio#readme"
 }
