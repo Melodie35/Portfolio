@@ -61,4 +61,5 @@ jobs:
     steps:
     - name: Trigger OVH webhook
       run: |
-        curl -X POST ${{ secrets.OVH_WEBHOOK_URL }}
+        curl -v -X POST "${{ secrets.OVH_WEBHOOK_URL }}" \
+          -H "Content-Type: application/json"
