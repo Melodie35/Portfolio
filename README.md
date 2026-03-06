@@ -4,12 +4,14 @@
 </div>
 
 <p align="center">
+    <img src="https://img.shields.io/badge/NodeJs-v32.7.0-blue">
     <img src="https://img.shields.io/badge/Cypress-v14.5.4-blue">
   <br><br><br>
 </p>
 
 # Prérequis
 Pour les tests automatisés, vous devez avoir l'applicatif suivant :
+- NodeJs
 - Cypress
 
 # Installation et démarrage
