@@ -124,11 +124,11 @@
 .contactColumn i {
     color: #198754;
 }
-#contact h3 a {
+#contact p a {
   color: inherit;
   text-decoration: none;
 }
-#contact h3 a:hover {
+#contact p a:hover {
   text-decoration: underline;
 }
 
