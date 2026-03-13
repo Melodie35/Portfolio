@@ -4,8 +4,8 @@
   "type": "module",
   "description": "<div align=\"center\">",
   "main": "cypress.config.js",
-  "dependencies": {},
   "devDependencies": {
+    "@cypress/code-coverage": "^3.14.7",
     "cypress": "^14.5.4"
   },
   "scripts": {
