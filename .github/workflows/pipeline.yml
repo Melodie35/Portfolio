@@ -38,15 +38,21 @@ jobs:
         with: 
           install: false
           start: npm run dev     #démarrage des tests
+          wait-on: 'http://localhost:5500'
+          record: true
+        env:
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
 
-      - uses: actions/upload-artifact@v4
+      - name: Upload screenshots if tests failed
+        uses: actions/upload-artifact@v4
         if: failure()
         with:
           name: cypress-screenshots
           path: cypress/screenshots
           retention-days: 1    #garde les screenshots sur 1 jours
 
-      - uses: actions/upload-artifact@v4
+      - name: Upload test videos
+        uses: actions/upload-artifact@v4
         if: always()
         with:
           name: cypress-videos
