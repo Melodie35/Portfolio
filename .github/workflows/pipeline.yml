@@ -39,6 +39,9 @@ jobs:
           install: false
           start: npm run dev     #démarrage des tests
 
+      - name: Create nyc_output directory
+        run: mkdir -p .nyc_output
+
       - name: Generate Coverage Report
         run: npm run cypress:cov
 
@@ -72,12 +75,5 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./
-          server-dir: /www/
-          exclude: |
-            .git*
-            **/.git*
-            .git/**
-            **/node_modules/**
-            **/cypress/**
-            .github/**        
+          server-dir: /www/      
         
