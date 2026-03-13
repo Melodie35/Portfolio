@@ -1,8 +1,9 @@
-const { defineConfig } = require("cypress");
+import { defineConfig } from "cypress";
 import * as ccModule from '@cypress/code-coverage/task.js'
 const registerCodeCoverageTaks = ccModule.default
 
-module.exports = defineConfig({
+export default defineConfig({
+  video:true,
   e2e: {
     baseUrl: "http://127.0.0.1:5500",
     setupNodeEvents(on, config) {
