@@ -1,6 +1,7 @@
 {
   "name": "p12-testeur-logiciel-portfolio",
   "version": "1.0.0",
+  "type": "module",
   "description": "<div align=\"center\">",
   "main": "cypress.config.js",
   "dependencies": {},
@@ -20,7 +21,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "bugs": {
     "url": "https://github.com/Melodie35/Portfolio/issues"
   },
