@@ -39,8 +39,10 @@ jobs:
           install: false
           start: npm run dev     #démarrage des tests
 
-      - name: Upload screenshots on failure
-        uses: actions/upload-artifact@v4
+      - name: Generate Coverage Repport
+        run: npm run cypress:cov
+        
+      - uses: actions/upload-artifact@v4
         if: failure()
         with:
           name: cypress-screenshots
