@@ -4,8 +4,9 @@
 </div>
 
 <p align="center">
-    <img src="https://img.shields.io/badge/NodeJs-v23.7.0-blue">
     <img src="https://img.shields.io/badge/Cypress-v14.5.4-blue">
+    <img src="https://img.shields.io/badge/NodeJs-v23.7.0-green">
+    <img src="https://img.shields.io/badge/npm-v11.6.0-green">
   <br><br><br>
 </p>
 

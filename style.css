@@ -19,7 +19,8 @@
 
 /* navbar color */
 .navbar-dark .navbar-nav .nav-link {
-    color: white;
+    color: white !important;
+    background-color: transparent !important;
 }
 
 /* display background dark color on navbar scroll */
