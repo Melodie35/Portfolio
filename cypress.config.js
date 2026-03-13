@@ -1,4 +1,4 @@
-import { defineConfig } from "cypress";
+const { defineConfig } = require("cypress");
 import * as ccModule from '@cypress/code-coverage/task.js'
 const registerCodeCoverageTaks = ccModule.default
 
