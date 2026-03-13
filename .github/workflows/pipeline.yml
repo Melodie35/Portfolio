@@ -39,18 +39,33 @@ jobs:
           install: false
           start: npm run dev     #démarrage des tests
 
-      - name: Create nyc_output directory
-        run: mkdir -p .nyc_output
-
-      - name: Generate Coverage Report
-        run: npm run cypress:cov
-
       - uses: actions/upload-artifact@v4
         if: failure()
         with:
           name: cypress-screenshots
           path: cypress/screenshots
-          retention-days: 3    #garde les screenshots sur 3 jours
+          retention-days: 1    #garde les screenshots sur 1 jours
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: cypress-videos
+          path: cypress/videos
+          retention-days: 1
+
+      - name: Merge reports
+        run: npx mochawesome-merge cypress/reports/*.json -o cypress/reports/report.json
+
+      - name: Generate HTML report
+        run: npx marge cypress/reports/report.json -o cypress/reports/html
+
+      - name: Upload test report
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: cypress-report
+          path: cypress/reports/html
+          retention-days: 1
 
       - name: Setup pages
         uses: actions/configure-pages@v4
