@@ -18,8 +18,7 @@ Pour les tests automatisés, vous devez avoir l'applicatif suivant :
 # Installation et démarrage
 Clonez le projet pour le récupérer
 ``` 
-git clone https://github.com/OpenClassrooms-Student-Center/Eco-Bliss-Bath-V2.git
-cd Eco-Bliss-Bath-V2
+git clone https://github.com/Melodie35/Portfolio.git
 ```
 
 # Pour lancer les tests automatisés avec Cypress
