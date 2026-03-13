@@ -39,9 +39,9 @@ jobs:
           install: false
           start: npm run dev     #démarrage des tests
 
-      - name: Generate Coverage Repport
+      - name: Generate Coverage Report
         run: npm run cypress:cov
-        
+
       - uses: actions/upload-artifact@v4
         if: failure()
         with:

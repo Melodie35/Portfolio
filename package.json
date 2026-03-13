@@ -10,7 +10,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "cypress": "cypress run",
-    "dev": "serve . -p 5500"
+    "dev": "serve . -p 5500",
+    "cypress:cov": "npx nyc report"
   },
   "repository": {
     "type": "git",
