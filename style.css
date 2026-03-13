@@ -23,6 +23,10 @@
     background-color: transparent !important;
 }
 
+.navbar {
+    background-color: #07052C !important;
+}
+
 /* display background dark color on navbar scroll */
 .navbarScroll {
     background-color: transparent;
