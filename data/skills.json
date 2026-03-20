@@ -2,37 +2,37 @@
     {
         "image": "html-css.webp",
         "title": "HTML - CSS",
-        "alt": "HTM et CSS logo",
+        "alt": "Logo HTML et CSS",
         "text": "Intégration d’interfaces responsives et accessibles, utilisation de maquettes Figma, développement d’animations CSS"
     },
     {
         "image": "js.webp",
         "title": "javascript",
-        "alt": "JS logo",
+        "alt": "Logo JS",
         "text": "Manipulation du DOM, création d’éléments dynamiques, gestion de données de formulaires"
     },
     {
         "image": "react.webp",
         "title": "React",
-        "alt": "React logo",
+        "alt": "Logo React",
         "text": "Création d’applications React, création de composants et manipulation de leur état"
     },
     {
         "image": "gestion-de-projet.webp",
         "title": "Gestion de projet",
-        "alt": "Gestion de projet logo",
+        "alt": "Logo Gestion de projet",
         "text": "Analyse des besoins d’un client, définition d’une solution technique répondant aux besoins fonctionnelle, planification du projet"
     },
     {
         "image": "optimisation-et-debug.webp",
         "title": "Optimisation et debug",
-        "alt": "Debug logo",
+        "alt": "Logo Debug",
         "text": "Identification des anomalies et correction d’un site existant, optimisation SEO et performance et publication d’un site en ligne"
     },
     {
         "image": "test.webp",
         "title": "Test",
-        "alt": "logo Test",
+        "alt": "Logo Test",
         "text": "Tests exploratoires, unitaires et d’intégration, définition d’une stratégie de test et d’un rédaction d’un cahier de recette, automatisation de tests E2E et d’API"
     }
 ]

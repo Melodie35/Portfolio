@@ -46,7 +46,9 @@ describe('SEO', () => {
 
     it('should have alt attributes on all images', () => {
         cy.get('img').each(($img) => {
-            cy.wrap($img).should('have.attr', 'alt')
+            cy.wrap($img)
+                .should('have.attr', 'alt')
+                .and('not.be.empty')
         })
     })
 
