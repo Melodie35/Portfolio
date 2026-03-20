@@ -10,6 +10,9 @@
     "mochawesome-merge": "^5.1.1",
     "mochawesome-report-generator": "^6.3.2"
   },
+  "overrides": {
+    "serialize-javascript": "7.0.3"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "cypress": "cypress run",
